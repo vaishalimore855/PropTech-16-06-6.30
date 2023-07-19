@@ -1,0 +1,1495 @@
+{
+	"info": {
+		"_postman_id": "664b188d-4d4b-4046-8b71-07b871fa21db",
+		"name": "PropTech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26886003"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Adminrole",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role\" : \"Super Admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/adminroles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminroles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/adminroles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminroles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/adminroles/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminroles",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/adminroles/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminroles",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role\" : \"Super Admin\",\r\n    \"status\" : \"true\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/adminroles/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminroles",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Adminmenu",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"User Management\",\r\n    \"link\" : \"usermanagement\",\r\n    \"icon\" : \"fa-users\",\r\n    \"parentid\" : \"1\",\r\n    \"priority\" : \"3\",\r\n    \"type\" : \"submain\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/adminmenus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminmenus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/adminmenus",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminmenus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Details by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/adminmenus/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminmenus",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete by Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/adminmenus/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminmenus",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update by id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"Users\",\r\n    \"link\" : \"users\",\r\n    \"icon\" : \"fa-users\",\r\n    \"parentid\" : \"1\",\r\n    \"priority\" : \"3\",\r\n    \"type\" : \"submain\",\r\n    \"status\" : \"true\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/adminmenus/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"adminmenus",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullname\":\"Prop Seller\",\r\n    \"email\":\"seller@proptech.com\",\r\n    \"phoneNumber\":\"9876543210\",\r\n    \"role\":\"1\",\r\n    \"password\":\"Jon@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/users/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update By Id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullname\":\"PropTech Seller\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/users/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete By Admin",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/users/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User KYC",
+					"item": [
+						{
+							"name": "Upload Kyc",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "aadhar_back",
+											"type": "file",
+											"src": "/C:/Users/Admin/Pictures/flowers-19830_1280.jpg"
+										},
+										{
+											"key": "aadhar_front",
+											"type": "file",
+											"src": "/C:/Users/Admin/Pictures/beautiful-sunrise-with-stars-galaxy-night-sky_410516-15674.jpg"
+										},
+										{
+											"key": "pan",
+											"type": "file",
+											"src": "/C:/Users/Admin/Pictures/bombshellart-a-magnificent-view-of-the-heavens-looking-up_948605-3.jpg"
+										},
+										{
+											"key": "userid",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/users/upload-kyc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users",
+										"upload-kyc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Kyc",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "aadhar_front",
+											"type": "file",
+											"src": "/C:/Users/Admin/Pictures/bombshellart-a-magnificent-view-of-the-heavens-looking-up_948605-3.jpg"
+										},
+										{
+											"key": "aadhar_back",
+											"type": "file",
+											"src": "/C:/Users/Admin/Pictures/beautiful-sunrise-with-stars-galaxy-night-sky_410516-15674.jpg"
+										},
+										{
+											"key": "pan",
+											"type": "file",
+											"src": "/C:/Users/Admin/Pictures/flowers-19830_1280.jpg"
+										},
+										{
+											"key": "userid",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/users/update-kyc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users",
+										"update-kyc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Kyc",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/users/delete-kyc/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users",
+										"delete-kyc",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"jonsena@proptech.com\",\r\n    \"password\":\"Jon@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/admins/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"admins",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"jonsena@proptech.com\",\r\n    \"currentPassword\":\"Jon@123\",\r\n    \"newPassword\":\"Jon@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/admins/changepassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"admins",
+										"changepassword"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Admin Profile",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/admins/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"admins",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"fullname\": \"Jon sena\",\r\n    \"email\": \"jonsena@proptech.com\",\r\n    \"password\": \"$2b$10$uTTnB3OT2OiDLDcUVOm7yOfYv/rf0ztZ.Jfmoa33dzAgJ.9BLdakS\",\r\n    \"role\": \"2\",\r\n    \"phoneNumber\": \"9876543210\",\r\n    \"city\": \"Pune\",\r\n    \"address\": \"Kharadi\",\r\n    \"image\": null,\r\n    \"menu\": \"[\\\"1\\\",\\\"2\\\",\\\"3\\\"]\",\r\n    \"isAdmin\": true,\r\n    \"isVerifiedByAdmin\": false,\r\n    \"isBlockedByAdmin\": false,\r\n    \"freeAdvertLimit\": 0,\r\n    \"paidAdvertLimit\": 0,\r\n    \"createdAt\": \"2023-07-04T04:28:05.276Z\",\r\n    \"updatedAt\": \"2023-07-04T04:53:40.328Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/admins/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"admins",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Managers",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullname\":\"Jon sena\",\r\n    \"email\":\"jonsena@proptech.com\",\r\n    \"role\":\"2\",\r\n    \"phoneNumber\":\"9876543210\",\r\n    \"password\":\"Jon@123\",\r\n    \"menu\":[\r\n    \"1\",\r\n    \"2\",\r\n    \"3\"\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/managers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"managers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/managers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"managers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/managers/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"managers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update By Id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullname\":\"Super Admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8090/api/managers/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"managers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete By Admin",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/managers/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"managers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8090/api/users/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"users",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Property",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Beautiful House",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Spacious and elegant house with modern amenities.",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "Residential",
+									"type": "text"
+								},
+								{
+									"key": "listedIn",
+									"value": "Sale",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "$500,000",
+									"type": "text"
+								},
+								{
+									"key": "yearlyTaxRate",
+									"value": "2%",
+									"type": "text"
+								},
+								{
+									"key": "associationFee",
+									"value": "$200",
+									"type": "text"
+								},
+								{
+									"key": "afterPriceLabel",
+									"value": "Discounted Price",
+									"type": "text"
+								},
+								{
+									"key": "beforePriceLabel",
+									"value": "Original Price",
+									"type": "text"
+								},
+								{
+									"key": "propertyStatus",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "123 Main St",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "California",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Los Angeles",
+									"type": "text"
+								},
+								{
+									"key": "neighborhood",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "zip",
+									"value": "90001",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "34.0522",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "-118.2437",
+									"type": "text"
+								},
+								{
+									"key": "sizeInFt",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "lotSizeInFt",
+									"value": "5000",
+									"type": "text"
+								},
+								{
+									"key": "rooms",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "bedrooms",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "bathrooms",
+									"value": "2.5",
+									"type": "text"
+								},
+								{
+									"key": "customID",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "garages",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "garageSize",
+									"value": "400",
+									"type": "text"
+								},
+								{
+									"key": "yearBuilt",
+									"value": "2005",
+									"type": "text"
+								},
+								{
+									"key": "availableFrom",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "basement",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "extraDetails",
+									"value": "Additional features and amenities.",
+									"type": "text"
+								},
+								{
+									"key": "roofing",
+									"value": "Tile",
+									"type": "text"
+								},
+								{
+									"key": "exteriorMaterial",
+									"value": "Brick",
+									"type": "text"
+								},
+								{
+									"key": "structureType",
+									"value": "Single Family",
+									"type": "text"
+								},
+								{
+									"key": "floorsNo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "Additional notes or comments.",
+									"type": "text"
+								},
+								{
+									"key": "energyClass",
+									"value": "A",
+									"type": "text"
+								},
+								{
+									"key": "energyIndex",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "amenities",
+									"value": "Swimming Pool, Gym, Garden",
+									"type": "text"
+								},
+								{
+									"key": "videoid",
+									"value": "szvt1vD0Uug",
+									"type": "text"
+								},
+								{
+									"key": "videotype",
+									"value": "youtube",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/beautiful-sunrise-with-stars-galaxy-night-sky_410516-15674.jpg"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/bombshellart-a-magnificent-view-of-the-heavens-looking-up_948605-3.jpg"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/flowers-19830_1280.jpg"
+								},
+								{
+									"key": "userid",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/property",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/property",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"property"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/property/findByUser/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"property",
+								"findByUser",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/property/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"property",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Beautiful Apartment\",\r\n  \"description\": \"Spacious and elegant house with modern amenities.\",\r\n  \"category\": \"Residential\",\r\n  \"listedIn\": \"Sale\",\r\n  \"price\": \"₹50,00,000\",\r\n  \"yearlyTaxRate\": \"2%\",\r\n  \"associationFee\": \"₹200\",\r\n  \"afterPriceLabel\": \"Discounted Price\",\r\n  \"beforePriceLabel\": \"Original Price\",\r\n  \"propertyStatus\": true,\r\n  \"address\": \"123 Main St\",\r\n  \"state\": \"California\",\r\n  \"city\": \"Los Angeles\",\r\n  \"neighborhood\": 12345,\r\n  \"zip\": 90001,\r\n  \"latitude\": 34.0522,\r\n  \"longitude\": -118.2437,\r\n  \"sizeInFt\": 2000,\r\n  \"lotSizeInFt\": 5000,\r\n  \"rooms\": 6,\r\n  \"bedrooms\": 4,\r\n  \"bathrooms\": 2.5,\r\n  \"customID\": 123456,\r\n  \"garages\": 2,\r\n  \"garageSize\": 400,\r\n  \"yearBuilt\": 2005,\r\n  \"availableFrom\": 0,\r\n  \"basement\": 0,\r\n  \"extraDetails\": \"Additional features and amenities.\",\r\n  \"roofing\": \"Tile\",\r\n  \"exteriorMaterial\": \"Brick\",\r\n  \"structureType\": \"Single Family\",\r\n  \"floorsNo\": 2,\r\n  \"notes\": \"Additional notes or comments.\",\r\n  \"energyClass\": \"A\",\r\n  \"energyIndex\": 80,\r\n  \"amenities\": \"Swimming Pool, Gym, Garden\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/property/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"property",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/property/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"property",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload media",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/flowers-19830_1280.jpg"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/beautiful-sunrise-with-stars-galaxy-night-sky_410516-15674.jpg"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/bombshellart-a-magnificent-view-of-the-heavens-looking-up_948605-3.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/property/upload-array",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"property",
+								"upload-array"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Property Verifications",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "propertyId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "surveyNumber",
+									"value": "Spacious and elegant house with modern amenities.",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Residential",
+									"type": "text"
+								},
+								{
+									"key": "ownershipHistory",
+									"value": "Sale",
+									"type": "text"
+								},
+								{
+									"key": "transactionHistory",
+									"value": "$500,000",
+									"type": "text"
+								},
+								{
+									"key": "liens",
+									"value": "2%",
+									"type": "text"
+								},
+								{
+									"key": "mortgages",
+									"value": "$200",
+									"type": "text"
+								},
+								{
+									"key": "charges",
+									"value": "Discounted Price",
+									"type": "text"
+								},
+								{
+									"key": "legalRestrictions",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Admin/Pictures/bombshellart-a-magnificent-view-of-the-heavens-looking-up_948605-3.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/propertyverification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"propertyverification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/propertyverification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"propertyverification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/propertyverification/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"propertyverification",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Beautiful Apartment\",\r\n  \"description\": \"Spacious and elegant house with modern amenities.\",\r\n  \"category\": \"Residential\",\r\n  \"listedIn\": \"Sale\",\r\n  \"price\": \"₹50,00,000\",\r\n  \"yearlyTaxRate\": \"2%\",\r\n  \"associationFee\": \"₹200\",\r\n  \"afterPriceLabel\": \"Discounted Price\",\r\n  \"beforePriceLabel\": \"Original Price\",\r\n  \"propertyStatus\": true,\r\n  \"address\": \"123 Main St\",\r\n  \"state\": \"California\",\r\n  \"city\": \"Los Angeles\",\r\n  \"neighborhood\": 12345,\r\n  \"zip\": 90001,\r\n  \"latitude\": 34.0522,\r\n  \"longitude\": -118.2437,\r\n  \"sizeInFt\": 2000,\r\n  \"lotSizeInFt\": 5000,\r\n  \"rooms\": 6,\r\n  \"bedrooms\": 4,\r\n  \"bathrooms\": 2.5,\r\n  \"customID\": 123456,\r\n  \"garages\": 2,\r\n  \"garageSize\": 400,\r\n  \"yearBuilt\": 2005,\r\n  \"availableFrom\": 0,\r\n  \"basement\": 0,\r\n  \"extraDetails\": \"Additional features and amenities.\",\r\n  \"roofing\": \"Tile\",\r\n  \"exteriorMaterial\": \"Brick\",\r\n  \"structureType\": \"Single Family\",\r\n  \"floorsNo\": 2,\r\n  \"notes\": \"Additional notes or comments.\",\r\n  \"energyClass\": \"A\",\r\n  \"energyIndex\": 80,\r\n  \"amenities\": \"Swimming Pool, Gym, Garden\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/propertyverification/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"propertyverification",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/propertyverification/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"propertyverification",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Basic\",\r\n    \"price\":5000,\r\n    \"feature\":\"5 Property listing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/subscriptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/subscriptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"feature\":\"5 Property Listing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/subscriptions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"subscriptions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/subscriptions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"subscriptions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/subscriptions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"subscriptions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
